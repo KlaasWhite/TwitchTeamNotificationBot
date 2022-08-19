@@ -9,7 +9,9 @@ This bot requires a discord bot token and a twitch developer application, I won'
 These need to be provided in environment variables when this application is deployed with these fields:
 
 PORT (does not need to be given, is provided by host)
+
 SERVER_URL (url of the server, needed for callbacks and webhooks)
+
 API_KEY (a api key chosen by you, used to interact with the application)
 
 DISCORD_BOT_TOKEN 
