@@ -1,7 +1,5 @@
-import { DiscordAPIError } from "discord.js";
 import { Request, Response } from "express";
 import DiscordHelper from "../DiscordHelper";
-import TwitchHelper from "../TwitchHelper";
 
 export interface TwitchRedemptionReward {
     cost: number;
@@ -13,8 +11,6 @@ export interface TwitchRedemptionReward {
 const webhooksCallback = (req: Request, res: Response) => {
     const messageType = req.header("Twitch-Eventsub-Message-Type");
     if (messageType === "webhook_callback_verification") {
-        // console.log("Verifying Webhook");
-        // console.log(req.body);
         try {
         } catch (error) {
             console.error(error);

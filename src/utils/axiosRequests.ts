@@ -1,5 +1,4 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { User } from "discord.js";
 import TwitchHelper, { Streamer } from "../TwitchHelper";
 import EnvironmentVariables from "./EnvironmentVariables";
 

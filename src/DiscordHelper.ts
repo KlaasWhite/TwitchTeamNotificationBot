@@ -2,7 +2,6 @@ import Discord, {
     EmbedBuilder,
     IntentsBitField,
     TextBasedChannel,
-    TextBasedChannelMixin,
 } from "discord.js";
 import TwitchHelper, { Streamer } from "./TwitchHelper";
 import EnvironmentVariables from "./utils/EnvironmentVariables";

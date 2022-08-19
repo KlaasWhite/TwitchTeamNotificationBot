@@ -32,7 +32,6 @@ const verifyTwitchSignature = (req: any, res: any, buf: any, encoding: any) => {
     if (messageSignature !== computedSignature) {
         throw new Error("Invalid signature.");
     } else {
-        console.log("Verification successful");
     }
 };
 

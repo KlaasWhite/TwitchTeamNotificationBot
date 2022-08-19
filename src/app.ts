@@ -20,8 +20,6 @@ if (!started) {
     process.exit();
 }
 
-console.log(EnvironmentVariables.TWITCH_SIGNING_SECRET);
-
 app.post("/test/remove", (req, res) => {
     if (req.header("api-key") !== EnvironmentVariables.API_KEY) {
         res.statusCode = 401;

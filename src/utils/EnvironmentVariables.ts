@@ -95,7 +95,6 @@ export default class EnvironmentVariables {
             return false;
         }
         this.TWITCH_SIGNING_SECRET = generateRandomString(40);
-        // this.TWITCH_SIGNING_SECRET = "6HXU7CKT42jTNbntGAQ9bgge1rN1vp8dFn1MST0w";
         return true;
     }
 }
