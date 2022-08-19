@@ -20,7 +20,7 @@ if (!started) {
     process.exit();
 }
 
-app.post("/test/remove", (req, res) => {
+app.delete("/stopsubscription", (req, res) => {
     if (req.header("api-key") !== EnvironmentVariables.API_KEY) {
         res.statusCode = 401;
         res.send(
