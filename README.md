@@ -13,13 +13,18 @@ SERVER_URL (url of the server, needed for callbacks and webhooks)
 API_KEY (a api key chosen by you, used to interact with the application)
 
 DISCORD_BOT_TOKEN 
+
 DISCORD_NOTIFICATION_SERVER (id of the discord server)
+
 DISCORD_NOTIFICATION_CHANNEL (id of the discord channel)
 
+
 TWITCH_APPLICATION_CLIENT_ID
+
 TWITCH_APPLICATION_CLIENT_SECRET
 
 TWITCH_TEAM_NAME (name of the targetted stream team, see url of page to aquire the correct name)
+
 TWITCH_EXCLUDED_STREAMERS (comma seperate list of exclused streamers, use full lower case or use url again to find correct name)
 
 # Admin interaction
