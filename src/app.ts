@@ -37,12 +37,16 @@ app.post("/webhooks/callback", (req, res) => {
 });
 
 const initalise = async () => {
-    await DiscordHelper.initialiseDiscord();
-    await TwitchHelper.getOAuthToken();
-    if (TwitchHelper.twitchOAuthToken) {
-        await TwitchHelper.removeOldSubscriptions();
-        await TwitchHelper.loadStreamersInTeam();
-        await TwitchHelper.startSubscriptions();
+    try {
+        await DiscordHelper.initialiseDiscord();
+        await TwitchHelper.getOAuthToken();
+        if (TwitchHelper.twitchOAuthToken) {
+            await TwitchHelper.removeOldSubscriptions();
+            await TwitchHelper.loadStreamersInTeam();
+            await TwitchHelper.startSubscriptions();
+        }
+    } catch (e) {
+        console.log(e);
     }
 };
 
